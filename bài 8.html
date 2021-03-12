@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let array = [1,2,12,42,4,3,19,9,39,3];
+    for (let i = 0; i < (array.length - 1); i++) {
+        for ( let j = (i+1); j < (array.length); j++) {
+            let a1 = array[i];
+            let a2 = array[j];
+            let a3;
+            if (a2 > a1) {
+                a3 = array[i];
+                array[i] = array[j];
+                array[j] = a3;
+            }
+        }
+    }
+    document.write(array);
+
+</script>
+</html>

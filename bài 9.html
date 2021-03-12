@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = [1,2,12,42,4,3,19,9,39,3];
+    let b = [9,3,1,5,7,4,3,6,4,0];
+    let c = [];
+    for (let i = 0; i < a.length;i++ ) {
+        c[i] = a[i];
+    }
+    for (let i = 0; i < b.length;i++ ) {
+        c[i+10] = b[i];
+    }
+    document.write(c);
+</script>
+</html>
